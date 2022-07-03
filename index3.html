@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>我的主页</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		td {
+			padding: 10px 2px 10px 2px;
+		}
+
+		a:link, a:visited, a:hover, a:active {
+			text-decoration: none;
+		}
+	</style>
+	<script>
+		function click1() {
+			keyword = document.getElementById("keyword");
+			if(keyword.value == "")
+				window.open("https://top.baidu.com/board?platform=wise&tab=realtime&sa=fyb_search_kingkong_realtime_50669");
+			else
+				window.open("https://www.baidu.com/s?wd=" + keyword.value);
+		}
+		function click2() {
+			keyword = document.getElementById("keyword");
+			if(keyword.value == "")
+				window.open("https://i.snssdk.com/feoffline/hotspot_and_local/html/hot_list/index.html")
+			else
+				window.open("https://so.toutiao.com/search/?keyword=" + keyword.value);
+		}
+		function click3() {
+			keyword = document.getElementById("keyword");
+			window.open("https://www.wiki8.cn/search?q=" + keyword.value);
+		}
+		function keydown(event) {
+			if(event.keyCode == 13) {
+				click1();
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div>
+					<input type="text" id="keyword" class="form-control" onkeydown="keydown(event)">
+					<button type="button" class="btn btn-light" onclick="click1()">百度</button>
+					<button type="button" class="btn btn-light" onclick="click2()">头条</button>
+					<button type="button" class="btn btn-light" onclick="click3()">医学</button>
+	</div>
+	<div>
+		<table class="table table-condensed table-borderless">
+			<tbody>
+				<tr>
+					<td><a target="_blank" href="https://www.wiki8.cn/shoutaiyinfeijing_8297/">手太阴肺</a></td>
+					<td><a target="_blank" href="https://www.wiki8.cn/shouyangmingdachangjing_8265/">手阳明大肠</a></td>
+					<td><a target="_blank" href="https://www.wiki8.cn/zuyangmingweijing_4642/">足阳明胃</a></td>
+					<td><a target="_blank" href="https://www.wiki8.cn/zutaiyinpijing_101425/">足太阴脾</a></td>
+				</tr>
+				<tr>
+					<td><a target="_blank" href="https://www.wiki8.cn/shoushaoyinxinjing_8313/">手少阴心</a></td>
+					<td><a target="_blank" href="https://www.wiki8.cn/shoutaiyangxiaochangjing_8305/">手太阳小肠</a></td>
+					<td><a target="_blank" href="https://www.wiki8.cn/zutaiyangbangguangjing_101424/">足太阳膀胱</a></td>
+					<td><a target="_blank" href="https://www.wiki8.cn/zushaoyinshenjing_101423/">足少阴肾</a></td>
+				</tr>
+				<tr>
+					<td><a target="_blank" href="https://www.wiki8.cn/shoujueyinxinbaojing_8350/">手厥阴心包</a></td>
+					<td><a target="_blank" href="https://www.wiki8.cn/shoushaoyangsanjiaojing_8328/">手少阳三焦</a></td>
+					<td><a target="_blank" href="https://www.wiki8.cn/zushaoyangdanjing_4654/">足少阳胆</a></td>
+					<td><a target="_blank" href="https://www.wiki8.cn/zujueyinganjing_4683/">足厥阴肝</a></td>
+				</tr>
+				<tr>
+					<td><a target="_blank" href="https://www.wiki8.cn/renmai_9923/">任脉</a></td>
+					<td><a target="_blank" href="https://www.wiki8.cn/dumai_16594/">督脉</a></td>
+					<td><a target="_blank" href="https://www.wiki8.cn/chongmai_17590/">冲脉</a></td>
+					<td><a target="_blank" href="https://www.wiki8.cn/daimai_17031/">带脉</a></td>
+				</tr>
+				<tr>
+					<td><a target="_blank" href="https://www.wiki8.cn/yinweimai_3425/">阴维脉</a></td>
+					<td><a target="_blank" href="https://www.wiki8.cn/yangweimai_4225/">阳维脉</a></td>
+					<td><a target="_blank" href="https://www.wiki8.cn/yinjiaomai_3462/">阴蹻脉</a></td>
+					<td><a target="_blank" href="https://www.wiki8.cn/yangjiaomai_4255/">阳蹻脉</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>
