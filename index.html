@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>我的主页</title>
+	<meta charset="utf-8" />
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style type="text/css">
+		* {
+			font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "宋体", Arial, Verdana, sans-serif;
+			font-size: 14px;
+			padding: 0;
+			margin: 0;
+		}
+
+		a {
+			height: 40px;
+			line-height: 40px;
+			display: block;
+			padding: 0px 3px 0px 3px;
+		}
+
+		a:link, a:visited, a:hover, a:active {
+			text-decoration: none;
+		}
+
+		.flex-container1 {
+			height: 38px;
+			display: flex;
+			padding: 0px;
+			margin: 8px;
+		}
+
+		.flex-item1 {
+			width: 100%;
+			margin: 3px;
+		}
+
+		.flex-item2 {
+			margin: 3px;
+			padding: 0px 8px 0px 8px;
+		}
+
+		ul {
+			list-style: none;
+			padding: 12px 8px 0px 8px;
+		}
+
+		li {
+			width: 23%;
+			float: left;
+			list-style-position: inside;
+			list-style-type: none;
+			background: #9e9e9e1a;
+			margin: 6px 0;
+			margin-left: 1%;
+			margin-right: 1%;
+			height: 40px;
+			line-height: 40px;
+			overflow: hidden;
+			white-space: nowrap;
+			border-top-right-radius: 5px;
+			border-top-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+
+		.footer {
+			position:absolute; 
+			bottom:0; 
+			width:100%; 
+			height:60px; 
+			line-height:60px; 
+			color:#666; 
+			text-align:center;
+		}
+	</style>
+	<script>
+		function click1() {
+			keyword = document.getElementById("keyword");
+			if (keyword.value == "")
+				window.open("https://top.baidu.com/board?platform=wise&tab=realtime&sa=fyb_search_kingkong_realtime_50669");
+			else
+				window.open("https://www.baidu.com/s?wd=" + keyword.value);
+		}
+		function click2() {
+			keyword = document.getElementById("keyword");
+			if (keyword.value == "")
+				window.open("https://i.snssdk.com/feoffline/hotspot_and_local/html/hot_list/index.html")
+			else
+				window.open("https://so.toutiao.com/search/?keyword=" + keyword.value);
+		}
+		function click3() {
+			keyword = document.getElementById("keyword");
+			window.open("https://www.wiki8.cn/search?q=" + keyword.value);
+		}
+		function keydown(event) {
+			if (event.keyCode == 13) {
+				click1();
+			}
+		}
+
+		
+	</script>
+</head>
+
+<body>
+	<div class="flex-container1">
+		<input type="text" class="flex-item1" id="keyword" placeholder="热榜" onkeydown="keydown(event)">
+		<input type="button" class="flex-item2" value="百度" onclick="click1()">
+		<input type="button" class="flex-item2" value="头条" onclick="click2()">
+		<input type="button" class="flex-item2" value="医学" onclick="click3()">
+	</div>
+
+	<ul>
+		<li><a target="_blank" href="https://www.wiki8.cn/shoutaiyinfeijing_8297/"><span>手太阴肺</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/shouyangmingdachangjing_8265/"><span>手阳明大肠</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/zuyangmingweijing_4642/"><span>足阳明胃</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/zutaiyinpijing_101425/"><span>足太阴脾</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/shoushaoyinxinjing_8313/"><span>手少阴心</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/shoutaiyangxiaochangjing_8305/"><span>手太阳小肠</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/zutaiyangbangguangjing_101424/"><span>足太阳膀胱</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/zushaoyinshenjing_101423/"><span>足少阴肾</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/shoujueyinxinbaojing_8350/"><span>手厥阴心包</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/shoushaoyangsanjiaojing_8328/"><span>手少阳三焦</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/zushaoyangdanjing_4654/"><span>足少阳胆</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/zujueyinganjing_4683/"><span>足厥阴肝</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/renmai_9923/"><span>任脉</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/dumai_16594/"><span>督脉</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/chongmai_17590/"><span>冲脉</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/daimai_17031/"><span>带脉</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/yinweimai_3425/"><span>阴维脉</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/yangweimai_4225/"><span>阳维脉</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/yinjiaomai_3462/"><span>阴蹻脉</span></a></li>
+		<li><a target="_blank" href="https://www.wiki8.cn/yangjiaomai_4255/"><span>阳蹻脉</span></a></li>
+	</ul>
+
+	<footer class="footer">
+		<!--<p>Posted by: Hege Refsnes</p>-->
+	</footer>
+</body>
+
+</html>
